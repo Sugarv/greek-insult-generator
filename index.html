@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Μπινελικομηχανή</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Η Μπινελικομηχανή</h1>
+    <img src="funny-image.jpg" alt="Funny Character" class="funny-image">
+    <div class="form-group">
+      <label for="gender">Επιλέξτε φύλο:</label>
+      <select id="gender">
+        <option value="1">Αρσενικό</option>
+        <option value="2">Θηλυκό</option>
+        <option value="3">Ουδέτερο / Non-binary</option>
+      </select>
+    </div>
+    <button class="generate-button" onclick="generatePhrase()">Δημιούργησε</button>
+    <div class="phrase-box">
+      <p id="phrase" class="phrase">Η φράση σας θα εμφανιστεί εδώ</p>
+      <button id="copy-btn" class="copy-button" onclick="copyPhrase()">
+        <img src="copy-icon.png" alt="Copy" class="copy-icon"> Αντιγραφή
+      </button>
+    </div>
+      <br><br>
+    <div class="social-buttons">
+      <a href="#" class="share-button fb" onclick="shareOnFacebook()">Μοιράσου στο Facebook</a>
+      <a href="#" class="share-button twitter" onclick="shareOnTwitter()">Μοιράσου στο X</a>
+    </div>
+<div>
+<br><p>Made with ❤️  by <a href="mailto:sugarv@me.com">SugarVag</a></p>
+</div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ5QNH2CLJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TZ5QNH2CLJ');
+</script>

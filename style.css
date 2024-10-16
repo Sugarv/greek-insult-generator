@@ -1,0 +1,216 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;700&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sofia Sans', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #2b6777;
+  margin-bottom: 20px;
+}
+
+.funny-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2em;
+  color: #333;
+}
+
+select {
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #2b6777;
+  margin-top: 10px;
+}
+
+.generate-button {
+  background-color: #2b6777;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.generate-button:hover {
+  background-color: #52ab98;
+}
+
+/* Phrase Box Styling */
+.phrase-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0f7fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border: 2px solid #2b6777;
+}
+
+.phrase {
+  font-size: 1.8em;
+  color: #2b6777;
+  word-break: break-word;
+  max-width: 75%;
+  text-align: left;
+}
+
+.copy-button {
+  background-color: #2b6777;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #52ab98;
+}
+
+.copy-icon {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.social-buttons {
+  margin-top: 20px;
+}
+
+.share-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2b6777;
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.fb:hover {
+  background-color: #3b5998;
+}
+
+.twitter:hover {
+  background-color: #1da1f2;
+}
+
+.tiktok:hover {
+  background-color: #010101;
+}
+
+/* Media Queries */
+
+/* Tablet devices */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .phrase {
+    font-size: 1.6em;
+  }
+
+  .generate-button {
+    font-size: 1.1em;
+    padding: 10px 20px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .funny-image {
+    width: 280px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .phrase-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .phrase {
+    font-size: 1.4em;
+    max-width: 100%;
+  }
+
+  .copy-button {
+    margin-top: 10px;
+    font-size: 0.9em;
+    padding: 6px 12px;
+  }
+
+  .generate-button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+
+  .share-button {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+}
